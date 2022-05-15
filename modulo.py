@@ -9,16 +9,16 @@ from math import sin
 from math  import sqrt 
 from math import pi as PI
 
-print( math.e )
+# print( math.e )
 
-print( math.cos (1.6))
+# print( math.cos (1.6))
 
-print( math.factorial (5)) 
+# print( math.factorial (5)) 
 
-resultado = sin(PI/ 2)
-print(resultado)
-resultado = sqrt(3*PI)
-print(resultado)
+# resultado = sin(PI/ 2)
+# print(resultado)
+# resultado = sqrt(3*PI)
+# print(resultado)
 
 def sumarnumero(numero1,numero2):
     suma = numero1 + numero2
@@ -38,18 +38,30 @@ def tipoDeNumero ( a ):
         mensaje = " el numero es menor a 0" 
     return mensaje
 
-resultado = tipoDeNumero(852147878) 
+# resultado = tipoDeNumero(852147878) 
 
-print(tipoDeNumero (10000))
+# print(tipoDeNumero (10000))
     
     
  
  
-print( " ingresar un numero por favor :")
+# print( " ingresar un numero por favor :")
 
-numeroTexto = int (input() )
+# numeroTexto = int (input() )
 
-resultado = tipoDeNumero( numeroTexto)
+# resultado = tipoDeNumero( numeroTexto)
 
 
-print( resultado)
+# print( resultado)
+
+# funcion factorial
+
+def factorial(numero):
+    if numero < 2 :
+      mensaje = "el factorial de {} es 1 : ".format(numero)
+    else :
+        fact = 1
+        for num in range(2,numero + 1):
+            fact *= num
+            mensaje ="el  factorial de {} es {}".format(numero,fact)
+    return mensaje
